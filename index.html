@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMPS – Last Mile Pyramid Solution LLP</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "lmps-green": "#386641",
+              "lmps-yellow": "#F2A900",
+              "lmps-blue": "#0077B6",
+              "lmps-dark": "#333333",
+              "lmps-light-bg": "#F5F5FF",
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white font-sans">
+    <!-- ---------------- HEADER ---------------- -->
+   <header class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 w-full">
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <h1 class="text-3xl font-extrabold text-lmps-green font-poppins">
+        LMPS<span class="text-lmps-yellow">.</span>
+      </h1>
+
+     <!-- Desktop Menu -->
+<div class="hidden md:flex items-center space-x-8">
+  <a href="#home" class="nav-link">Home</a>
+  <a href="#about" class="nav-link">About Us</a>
+  <a href="#solutions" class="nav-link">Solutions</a>
+  <a href="#contact"
+     class="px-4 py-2 text-sm font-bold rounded-full text-white bg-lmps-green hover:bg-lmps-green/90 transition">
+    Contact
+  </a>
+</div>
+
+
+      <!-- Mobile Button -->
+      <button id="menu-toggle"
+              class="md:hidden p-2 text-lmps-dark hover:bg-lmps-green hover:text-white rounded-md">
+        <svg id="menu-icon-open " class="h-6 w-6 block hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+       class="md:hidden hidden flex-col bg-white border-t shadow-lg transition-all duration-300 ease-in-out">
+    <a href="#home" class="mobile-link px-6 py-4 text-lg text-lmps-dark hover:bg-lmps-green hover:text-white">Home</a>
+    <a href="#about" class="mobile-link px-6 py-4 text-lg text-lmps-dark hover:bg-lmps-green hover:text-white">About Us</a>
+    <a href="#solutions" class="mobile-link px-6 py-4 text-lg text-lmps-dark hover:bg-lmps-green hover:text-white">Solutions</a>
+    <a href="#contact" class="mobile-link px-6 py-4 text-lg text-lmps-dark hover:bg-lmps-green hover:text-white">Contact</a>
+  </div>
+</header>
+
+
+
+    <!-- ---------------------- HOME ----------------------- -->
+    <section id="home" class="pt-24 pb-16 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="main-heading">
+          Empowering Rural India through<br />
+          <span class="highlight"
+            >Renewable Energy, Agroforestry & Enterprise Clusters</span
+          >
+        </h2>
+
+        <p class="subtext">
+          Last Mile Pyramid Solution LLP pioneers integrated solutions blending
+          renewable energy, groundwater recharge, carbon credits, and natural
+          farming to democratize hinterland markets.
+        </p>
+
+        <a href="#solutions" class="primary-btn">Explore Our Solutions ➡️</a>
+
+        <!-- Quick Links -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6 mt-12">
+          <a class="quick-card from-lmps-green" href="#solutions"
+            >🌞
+            <h3>Renewable Energy</h3></a
+          >
+          <a class="quick-card from-lmps-blue" href="#solutions"
+            >🌱
+            <h3>Agroforestry</h3></a
+          >
+          <a class="quick-card from-lmps-yellow" href="#solutions"
+            >🏭
+            <h3>Enterprise Clusters</h3></a
+          >
+          <a class="quick-card from-lmps-green" href="#solutions"
+            >🛒
+            <h3>O2O E-Commerce</h3></a
+          >
+          <a class="quick-card from-lmps-blue" href="#solutions"
+            >♻️
+            <h3>Carbon Credit</h3></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- ABOUT ----------------------- -->
+    <section id="about" class="section-light">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-subtitle">
+          Building a pyramidal framework for sustainable rural development
+        </p>
+
+        <!-- Vision / Mission -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
+          <div class="info-card border-lmps-green">
+            <h3 class="info-title text-lmps-green">Our Vision</h3>
+            <p>
+              Transform Gram Panchayats into engines of wealth, employment, and
+              climate resilience.
+            </p>
+          </div>
+
+          <div class="info-card border-lmps-yellow">
+            <h3 class="info-title text-lmps-yellow">Our Mission</h3>
+            <p>
+              Converge energy, agroforestry, enterprises & digital systems into
+              scalable rural solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Core Values -->
+        <h3 class="sub-heading">Core Values</h3>
+        <div class="value-wrapper">
+          <span class="value-tag border-lmps-green">Sustainability</span>
+          <span class="value-tag border-lmps-yellow">Inclusivity</span>
+          <span class="value-tag border-lmps-blue">Innovation</span>
+          <span class="value-tag border-lmps-green">Governance Vibrancy</span>
+          <span class="value-tag border-lmps-yellow"
+            >Resource Optimization</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- SOLUTIONS ----------------------- -->
+   <section id="solutions" class="section-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Our Solutions</h2>
+            <p class="section-subtitle">Six integrated pillars driving sustainable rural transformation</p>
+
+            <!-- Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+                <div class="solution-card border-lmps-green">
+                    <span class="icon">🔋</span>
+                    <h3 class="solution-title text-lmps-green">Renewable Energy Integration</h3>
+                    <ul class="list">
+                        <li>Solar energy under PM-KUSUM</li>
+                        <li>Bio-CNG (SATAT) from dairy clusters</li>
+                        <li>Energy crops for green fuel</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card border-lmps-blue">
+                    <span class="icon">💧</span>
+                    <h3 class="solution-title text-lmps-blue">Ground Water Recharge</h3>
+                    <ul class="list">
+                        <li>Community recharge structures</li>
+                        <li>Integrated natural farming</li>
+                        <li>Climate-resilient governance</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card border-lmps-green">
+                    <span class="icon">🌱</span>
+                    <h3 class="solution-title text-lmps-green">Climate-Resilient Agroforestry</h3>
+                    <ul class="list">
+                        <li>Multi-layered natural farming</li>
+                        <li>Carbon sequestration mapping</li>
+                        <li>Farmer training</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card border-lmps-yellow">
+                    <span class="icon">🏭</span>
+                    <h3 class="solution-title text-lmps-yellow">Rural Enterprise Development</h3>
+                    <ul class="list">
+                        <li>Agri & non-agri clusters</li>
+                        <li>Eco-friendly tiles, natural fibers</li>
+                        <li>MSME & Textile Mission</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card border-lmps-blue">
+                    <span class="icon">♻️</span>
+                    <h3 class="solution-title text-lmps-blue">Carbon Credit & Sustainability</h3>
+                    <ul class="list">
+                        <li>Carbon mapping for FPOs</li>
+                        <li>Access to global carbon markets</li>
+                        <li>Footprint reduction</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card border-lmps-green">
+                    <span class="icon">🛒</span>
+                    <h3 class="solution-title text-lmps-green">O2O E-Commerce</h3>
+                    <ul class="list">
+                        <li>Two-way rural marketplace</li>
+                        <li>Democratizing hinterland markets</li>
+                        <li>Bridging supply chain gaps</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------- CONTACT ----------------------- -->
+    <section id="contact" class="py-16 lg:py-24 bg-lmps-dark text-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Contact Us Heading -->
+        <div class="text-center">
+          <h2 class="section-title text-white">Contact Us</h2>
+          <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+            Reach out for collaborations, project development, or partnership
+            opportunities.
+          </p>
+        </div>
+
+        <!-- Form + Contact Details Wrapper -->
+        <div class="grid md:grid-cols-2 gap-12 mt-12 max-w-5xl mx-auto">
+          <!-- Contact Form -->
+          <div class="bg-white text-lmps-dark p-8 rounded-2xl shadow-xl">
+            <form class="space-y-4">
+              <input type="text" placeholder="Your Name" class="form-input" />
+              <input type="email" placeholder="Your Email" class="form-input" />
+              <textarea
+                rows="4"
+                placeholder="Message"
+                class="form-input"
+              ></textarea>
+              <button class="submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="text-white space-y-8">
+            <h3 class="text-2xl font-bold">Contact Information</h3>
+
+            <!-- Address -->
+            <div class="flex items-start space-x-4">
+              <span class="text-3xl text-lmps-yellow mt-1">📍</span>
+              <div>
+                <h4 class="text-lg font-semibold">Office Address</h4>
+                <p class="text-gray-300">Bhubaneswar, Odisha, India</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start space-x-4">
+              <span class="text-3xl text-lmps-yellow mt-1">📧</span>
+              <div>
+                <h4 class="text-lg font-semibold">Email</h4>
+                <p class="text-gray-300">
+                  <a
+                    href="mailto:lmpsolutionllp@gmail.com"
+                    class="hover:text-lmps-yellow transition"
+                  >
+                    lmpsolutionllp@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start space-x-4">
+              <span class="text-3xl text-lmps-yellow mt-1">📞</span>
+              <div>
+                <h4 class="text-lg font-semibold">Phone</h4>
+                <p class="text-gray-300">
+                  <a
+                    href="tel:+916744503363"
+                    class="hover:text-lmps-yellow transition"
+                  >
+                    +91-674 4503363
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-start space-x-4">
+              <span class="text-3xl text-lmps-yellow mt-1">🔗</span>
+              <div>
+                <h4 class="text-lg font-semibold">Connect With Us</h4>
+                <div class="flex space-x-4 text-gray-300 mt-2">
+                  <a
+                    href="#"
+                    class="hover:text-lmps-yellow font-medium transition"
+                    >LinkedIn</a
+                  >
+                  <span>•</span>
+                  <a
+                    href="#"
+                    class="hover:text-lmps-yellow font-medium transition"
+                    >Twitter</a
+                  >
+                  <span>•</span>
+                  <a
+                    href="#"
+                    class="hover:text-lmps-yellow font-medium transition"
+                    >Facebook</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- JS for Mobile Menu ---------------- -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
