@@ -244,108 +244,96 @@
     </section>
 
     <!-- ---------------------- CONTACT ----------------------- -->
-    <section id="contact" class="py-16 lg:py-24 bg-lmps-dark text-white">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Contact Us Heading -->
-        <div class="text-center">
-          <h2 class="section-title text-white">Contact Us</h2>
-          <p class="mt-4 max-w-2xl mx-auto text-gray-300">
-            Reach out for collaborations, project development, or partnership
-            opportunities.
-          </p>
-        </div>
+    <!-- ---------------------- CONTACT ----------------------- -->
+<section id="contact" class="py-16 lg:py-24 bg-lmps-dark text-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center">
+      <h2 class="section-title text-white">Contact Us</h2>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+        Reach out for collaborations, project development, or partnership opportunities.
+      </p>
+    </div>
 
-        <!-- Form + Contact Details Wrapper -->
-        <div class="grid md:grid-cols-2 gap-12 mt-12 max-w-5xl mx-auto">
-          <!-- Contact Form -->
-          <div class="bg-white text-lmps-dark p-8 rounded-2xl shadow-xl">
-            <form class="space-y-4">
-              <input type="text" placeholder="Your Name" class="form-input" />
-              <input type="email" placeholder="Your Email" class="form-input" />
-              <textarea
-                rows="4"
-                placeholder="Message"
-                class="form-input"
-              ></textarea>
-              <button class="submit-btn">Send Message</button>
-            </form>
-          </div>
+    <div class="grid md:grid-cols-2 gap-12 mt-12 max-w-5xl mx-auto">
 
-          <!-- Contact Information -->
-          <div class="text-white space-y-8">
-            <h3 class="text-2xl font-bold">Contact Information</h3>
+      <!-- Contact Form -->
+      <div class="bg-white text-lmps-dark p-8 rounded-2xl shadow-xl">
+        <form id="form" class="space-y-4">
 
-            <!-- Address -->
-            <div class="flex items-start space-x-4">
-              <span class="text-3xl text-lmps-yellow mt-1">📍</span>
-              <div>
-                <h4 class="text-lg font-semibold">Office Address</h4>
-                <p class="text-gray-300">Bhubaneswar, Odisha, India</p>
-              </div>
-            </div>
+          <input type="text" name="name" placeholder="Your Name" required class="form-input" />
+          <input type="email" name="email" placeholder="Your Email" required class="form-input" />
+          <textarea name="message" placeholder="Message" rows="4" required class="form-input"></textarea>
 
-            <!-- Email -->
-            <div class="flex items-start space-x-4">
-              <span class="text-3xl text-lmps-yellow mt-1">📧</span>
-              <div>
-                <h4 class="text-lg font-semibold">Email</h4>
-                <p class="text-gray-300">
-                  <a
-                    href="mailto:lmpsolutionllp@gmail.com"
-                    class="hover:text-lmps-yellow transition"
-                  >
-                    lmpsolutionllp@gmail.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <!-- Phone -->
-            <div class="flex items-start space-x-4">
-              <span class="text-3xl text-lmps-yellow mt-1">📞</span>
-              <div>
-                <h4 class="text-lg font-semibold">Phone</h4>
-                <p class="text-gray-300">
-                  <a
-                    href="tel:+916744503363"
-                    class="hover:text-lmps-yellow transition"
-                  >
-                    +91-674 4503363
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <!-- Social Links -->
-            <div class="flex items-start space-x-4">
-              <span class="text-3xl text-lmps-yellow mt-1">🔗</span>
-              <div>
-                <h4 class="text-lg font-semibold">Connect With Us</h4>
-                <div class="flex space-x-4 text-gray-300 mt-2">
-                  <a
-                    href="#"
-                    class="hover:text-lmps-yellow font-medium transition"
-                    >LinkedIn</a
-                  >
-                  <span>•</span>
-                  <a
-                    href="#"
-                    class="hover:text-lmps-yellow font-medium transition"
-                    >Twitter</a
-                  >
-                  <span>•</span>
-                  <a
-                    href="#"
-                    class="hover:text-lmps-yellow font-medium transition"
-                    >Facebook</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
       </div>
-    </section>
+
+      <!-- Contact Info -->
+      <div class="text-white space-y-8">
+        <h3 class="text-2xl font-bold">Contact Information</h3>
+
+        <div class="flex items-start space-x-4">
+          <span class="text-3xl text-lmps-yellow mt-1">📍</span>
+          <div>
+            <h4 class="text-lg font-semibold">Office Address</h4>
+            <p class="text-gray-300">Bhubaneswar, Odisha, India</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <span class="text-3xl text-lmps-yellow mt-1">📧</span>
+          <div>
+            <h4 class="text-lg font-semibold">Email</h4>
+            <p class="text-gray-300">
+              <a href="mailto:lmpsolutionllp@gmail.com" class="hover:text-lmps-yellow transition">
+                lmpsolutionllp@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <span class="text-3xl text-lmps-yellow mt-1">📞</span>
+          <div>
+            <h4 class="text-lg font-semibold">Phone</h4>
+            <p class="text-gray-300">
+              <a href="tel:+916744503363" class="hover:text-lmps-yellow transition">
+                +91-674 4503363
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <span class="text-3xl text-lmps-yellow mt-1">🔗</span>
+          <div>
+            <h4 class="text-lg font-semibold">Connect With Us</h4>
+            <div class="flex space-x-4 text-gray-300 mt-2">
+              <a href="#" class="hover:text-lmps-yellow font-medium transition">LinkedIn</a>
+              <span>•</span>
+              <a href="#" class="hover:text-lmps-yellow font-medium transition">Twitter</a>
+              <span>•</span>
+              <a href="#" class="hover:text-lmps-yellow font-medium transition">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-lmps-dark text-gray-300 py-6  mb-5">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+    <p class="text-sm">
+      © <span id="year"></span> LMPS – Last Mile Pyramid Solutions LLP.  
+      All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
 
     <!-- ---------------- JS for Mobile Menu ---------------- -->
     <script src="app.js" defer></script>
