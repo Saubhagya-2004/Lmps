@@ -20,14 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     closeIcon.classList.toggle("hidden");
   });
 
-  // Close on mobile link click
   document.querySelectorAll(".mobile-link").forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
       mobileMenu.classList.remove("flex");
 
-      openIcon.classList.remove("hidden");
-      closeIcon.classList.add("hidden");
+      // openIcon.classList.remove("hidden");
+      // closeIcon.classList.add("hidden");
     });
   });
 });
